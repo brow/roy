@@ -17,17 +17,17 @@
     "roy": "./roy"
   },
   "scripts": {
-    "install": "node src/grammar.js && node src/typegrammar.js"
+    "install": "./node_modules/.bin/grunt jison > /dev/null"
   },
   "homepage": "http://roy.brianmckenna.org/",
   "dependencies": {
+    "grunt": "0.3.15",
     "jison": "0.2.7",
     "source-map": "0.1.8",
     "underscore": "1.2.0",
     "unicode-categories": "0.9.0"
   },
   "devDependencies": {
-    "grunt": "0.3.15",
     "rigger": "0.3.19",
     "jasmine-node": "1.0.26"
   }
